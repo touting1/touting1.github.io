@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(230, 210, 173);
+}
+
+h1 {
+  color: white;
+  
+}
+
+h2 {
+    color: purple;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+p {
+  font-family: purple;
+  font-size: 20px;
+  
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
