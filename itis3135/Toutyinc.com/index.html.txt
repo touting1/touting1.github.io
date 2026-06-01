@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outing Tech Solutions</title>
+
+    <!-- Color Palette:
+    https://coolors.co/0d1b2a-1b263b-415a77-778da9-e0e1dd
+    -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e0e1dd;
+            color: #0d1b2a;
+        }
+
+        header {
+            background-color: #1b263b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        h1 {
+            display: inline;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #1b263b;
+            border-bottom: 2px solid #415a77;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        address {
+            background-color: white;
+            padding: 15px;
+            border-left: 5px solid #415a77;
+            font-style: normal;
+        }
+
+        footer {
+            background-color: #1b263b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Outing Tech Solutions Logo" width="75" height="75">
+    <h1>Outing Tech Solutions</h1>
+    <p>Turning Ideas Into Digital Reality</p>
+</header>
+
+<main>
+
+    <h2>Outing Tech Solutions Services</h2>
+
+    <p>
+        Outing Tech Solutions is a modern web development and technology
+        consulting firm dedicated to helping businesses establish a strong
+        online presence. We specialize in creating professional websites,
+        responsive web applications, and innovative digital solutions that
+        help our clients achieve their goals.
+    </p>
+
+    <h3>Why Clients Choose Us</h3>
+
+    <ul>
+        <li>Custom website development</li>
+        <li>Responsive mobile-friendly design</li>
+        <li>Fast project turnaround times</li>
+        <li>Cloud-based technology solutions</li>
+        <li>Website maintenance and support</li>
+        <li>Cybersecurity best practices</li>
+        <li>Affordable consulting packages</li>
+        <li>Modern UI/UX design principles</li>
+        <li>Reliable customer service</li>
+        <li>Scalable business solutions</li>
+    </ul>
+
+    <p>
+        Our mission is to provide high-quality digital solutions tailored
+        to each client's needs. Whether you need a personal website,
+        business platform, or custom web application, Outing Tech Solutions
+        is ready to help bring your vision to life.
+    </p>
+
+    <address>
+        <strong>Contact Us</strong><br><br>
+
+        Email: contact@outingtechsolutions.co<br>
+        Phone: (704) 555-1234<br>
+        Address: 9201 University City Blvd<br>
+        Charlotte, NC 28223
+    </address>
+
+</main>
+
+<footer>
+    <p>© 2026 Outing Tech Solutions</p>
+    <p>Turning Ideas Into Digital Reality</p>
+</footer>
+
+</body>
+</html>
