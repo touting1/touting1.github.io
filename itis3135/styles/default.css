@@ -24,3 +24,21 @@ figure {
     text-align: center;
     font-style: italic;
 }
+a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #2a9d8f;
+}
+
+a:hover {
+    color: #8c34eb;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #e20b0b;
+}
