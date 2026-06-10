@@ -6,49 +6,78 @@ body {
 }
 
 header {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 18px;
+    padding: 20px;
     background-color: #1e293b;
     text-align: center;
 }
 
 main {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 18px;
+    padding: 20px;
     background-color: #243247;
 }
 
 footer {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 18px;
+    padding: 20px;
     background-color: #1e293b;
     text-align: center;
 }
 
 
 h1 {
-    font-family: Georgia, serif;
+    font-family: "Cinzel", serif;
     color: #93c5fd;
     margin: 0 0 10px;
+    text-align: center;
 }
 
 h2 {
-    font-family: Georgia, serif;
+    font-family: "Cinzel", serif;
     color: #c4b5fd;
     margin-top: 0;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: #c4b5fd;
+    font-family: "Cinzel", serif;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin: 30px auto;
+    animation: float 3s ease-in-out infinite;
 }
 
-h3 {
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h4 {
     font-family: Georgia, serif;
     color: #ddd6fe;
+    margin-top: 0;
     margin-bottom: 5px;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 p {
     line-height: 1.5;
+    font-size: 1.1rem;
 }
 
 
@@ -74,6 +103,28 @@ a:hover {
     letter-spacing: 20px;
     margin-bottom: 15px;
 }
+.fact-card {
+    background-color: #334155;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+a:visited {
+    color: #c4b5fd;
+}
+.emoji-row {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.fact-card p {
+    margin: 0;
+    font-size: 1rem;
+}
+
 
 
 
