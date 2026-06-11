@@ -42,3 +42,8 @@ a:hover {
 a:active {
     color: #e20b0b;
 }
+.secondary-nav {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #1f9308;
+}
