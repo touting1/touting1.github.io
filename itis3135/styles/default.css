@@ -9,7 +9,7 @@ h1 {
 
 h2 {
     color: purple;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     
 }
@@ -46,4 +46,15 @@ a:active {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #1f9308;
+}
+header {
+    padding: 20px;
+}
+
+main {
+    padding: 40px;
+}
+
+footer {
+    padding: 20px;
 }
