@@ -5,18 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyreek Outing's Course Site | Tenacious Octopus | ITIS3135 | Cards</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        #playing-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            box-sizing: border-box;
+            background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+            color: #111827;
+            width: 180px;
+            height: 260px;
+            border: 2px solid #111827;
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 1.7rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .left {
+            align-self: flex-start;
+        }
+
+        .middle {
+            align-self: center;
+            text-align: center;
+        }
+
+        .right {
+            align-self: flex-end;
+            transform: rotate(180deg);
+        }
+
+        .red {
+            color: #b91c1c;
+        }
+
+        .card-face {
+            width: 120px;
+            height: auto;
+            display: block;
+        }
+        .joker-corner {
+            font-size: 0.9rem;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .joker-bottom {
+            transform: rotate(180deg);
+        }
+    </style>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <div data-include="components/header.html"></div>
 
     <main>
+
         <h2>Cards</h2>
 
-        <p>
-            Card content coming soon.
-        </p>
+    <div id="playing-cards">
+
+        <div class="card">
+             <div class="left joker-corner">
+        J<br>
+        O<br>
+        K<br>
+        E<br>
+        R
+    </div>
+
+    <div class="middle">
+        <img src="images/jokeroctopus.png"
+             alt="Joker Octopus"
+             class="card-face">
+    </div>
+
+    <div class="right joker-corner joker-bottom">
+        J<br>
+        O<br>
+        K<br>
+        E<br>
+        R
+    </div>
+        </div>
+
+        <div class="card red">
+            <div class="left">Q♥</div>
+
+            <div class="middle">
+                <img src="images/queenoctopus.png" 
+                     alt="Queen Octopus" 
+                     class="card-face">
+            </div>
+
+            <div class="right">♥Q</div>
+        </div>
+
+        <div class="card">
+            <div class="left">J♠</div>
+
+            <div class="middle">
+                <img src="images/jackoctopus.png" 
+                     alt="Jack Octopus" 
+                     class="card-face">
+            </div>
+
+            <div class="right">♠J</div>
+        </div>
+    </div>
+
     </main>
 
     <div data-include="components/footer.html"></div>
