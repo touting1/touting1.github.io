@@ -14,9 +14,89 @@
     <main>
         <h2>Survey</h2>
 
-        <p>
-            Survey content coming soon.
+        <p id="description">
+            Please enter information from your introduction page.
         </p>
+
+    <form id="survey-form">
+
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label>
+      <input
+        id="name"
+        type="text"
+        required
+        placeholder="Enter your name"
+      />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        required
+        placeholder="Enter your email"
+      />
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label>
+      <input
+        id="number"
+        type="number"
+        min="1"
+        max="120"
+        placeholder="Enter your age"
+      />
+
+      <!-- Personal Background -->
+  <label for="personal-background">Personal Background:</label>
+  <textarea
+    id="personal-background"
+    placeholder="Enter your personal background"
+    required
+  ></textarea>
+
+  <!-- Professional Background -->
+  <label for="professional-background">Professional Background:</label>
+  <textarea
+    id="professional-background"
+    placeholder="Enter your professional background"
+    required
+  ></textarea>
+
+  <!-- Academic Background -->
+  <label for="academic-background">Academic Background:</label>
+  <textarea
+    id="academic-background"
+    placeholder="Enter your academic background"
+    required
+  ></textarea>
+
+  <!-- Primary Computer -->
+  <label for="primary-computer">Primary Computer:</label>
+  <input
+    id="primary-computer"
+    type="text"
+    placeholder="Enter your primary computer"
+    required
+  />
+
+  <!-- Courses -->
+  <label for="courses">Courses:</label>
+  <textarea
+    id="courses"
+    placeholder="List the courses you are taking"
+    required
+  ></textarea>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments"></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
     </main>
 
     <div data-include="components/footer.html"></div>
