@@ -5,6 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyreek Outing's Course Site | Tenacious Octopus | ITIS3135 | Inventory</title>
     <link rel="stylesheet" href="styles/default.css">
+    <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .in-stock {
+            background-image: linear-gradient(#b8f7c5 30%, #8ee6a2 100%);
+        }
+
+        .low-stock {
+            background-image: linear-gradient(#fff3b0 30%, #ffd166 100%);
+        }
+
+        .sold-out {
+            background-image: linear-gradient(#f7b8b8 30%, #e76f6f 100%);
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .status {
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .rate {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .rate span {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #333;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .one span:nth-child(1) {
+        background-color: hotpink;
+        }
+
+        .two span:nth-child(1),
+        .two span:nth-child(2) {
+        background-color: hotpink;
+        }
+
+        .three span {
+            background-color: hotpink;
+        }
+    </style>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,11 +72,49 @@
     <div data-include="components/header.html"></div>
 
     <main>
-        <h2>Inventory</h2>
+        <h2>Octopus Plushie Inventory</h2>
 
-        <p>
-            inventory content coming soon.
-        </p>
+        
+
+        <table>
+            <thead>
+                <tr>
+                <th>Plushie Name</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Status</th>
+                <th>Cuteness Rate(by popularity)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="in-stock">
+                <td>Tenacious Octopus</td>
+                <td>Purple</td>
+                <td>Large</td>
+                <td><span class="status">In Stock</span></td>
+                <td><span class="rate three"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="low-stock">
+                <td>Tiny Tako</td>
+                <td>Blue</td>
+                <td>Small</td>
+                <td><span class="status">Low Stock</span></td>
+                <td><span class="rate two"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="sold-out">
+                <td>Jumbo Inkie</td>
+                <td>Pink</td>
+                <td>Jumbo</td>
+                <td><span class="status">Sold Out</span></td>
+                <td><span class="rate one"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                
+            </tbody>
+        </table>
     </main>
 
     <div data-include="components/footer.html"></div>
