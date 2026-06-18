@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyreek Outing's Course Site | Tenacious Octopus | ITIS3135 | Documentation</title>
+    <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        #navbar {
+            background-image: url("images/background.png");
+            border: 2px solid #12121201;
+            padding: 15px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 900px;
+            box-sizing: border-box;
+        }
+
+        #navbar header {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            color: #222;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 4px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: rgb(13, 141, 58);
+        }
+
+        .nav-link:hover {
+            background-color: #ddd;
+        }
+
+        #main-doc {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-section header {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        code {
+            display: block;
+            background-image: url("images/background.png");
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .nav-link {
+                display: block;
+                margin: 8px 0;
+            }
+
+            #main-doc {
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main id="main-doc">
+        <h2>Documentation</h2>
+
+        <nav id="navbar">
+            <header>HTML Basics</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+            <a class="nav-link" href="#Attributes">Attributes</a>
+            <a class="nav-link" href="#Forms">Forms</a>
+            <a class="nav-link" href="#Best_Practices">Best Practices</a>
+        </nav>
+
+        <section class="main-section" id="Introduction">
+            <h2>Introduction</h2>
+            <p>HTML is the standard markup language used to create web pages.</p>
+            <p>It gives structure to content so browsers can display text, images, links, and other elements.</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <ul>
+                <li>HTML stands for HyperText Markup Language.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="HTML_Elements">
+            <h2>HTML Elements</h2>
+            <p>HTML elements are the building blocks of a webpage.</p>
+            <p>Most elements have an opening tag, content, and a closing tag.</p>
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+            <ul>
+                <li>Elements help organize page content.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Attributes">
+            <h2>Attributes</h2>
+            <p>Attributes provide extra information about HTML elements.</p>
+            <p>They are usually written inside the opening tag of an element.</p>
+            <code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code>
+            <ul>
+                <li>Attributes often use name and value pairs.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Forms">
+            <h2>Forms</h2>
+            <p>Forms allow users to submit information on a webpage.</p>
+            <p>Common form elements include inputs, labels, buttons, and text areas.</p>
+            <code>&lt;input type="email"&gt;</code>
+            <code>&lt;button&gt;Submit&lt;/button&gt;</code>
+            <ul>
+                <li>Forms are useful for collecting user data.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Best_Practices">
+            <h2>Best Practices</h2>
+            <p>Good HTML should be readable, organized, and semantic.</p>
+            <p>Using proper tags improves accessibility and search engine understanding.</p>
+            <code>&lt;main&gt;Page content&lt;/main&gt;</code>
+            <ul>
+                <li>Use semantic elements when possible.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.min.js"></script>
+</body>
+</html>
