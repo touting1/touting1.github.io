@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking with Tyreek</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff3df;
+            color: #3a1f04;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #7a3e12;
+            color: #fff3df;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #7a3e12;
+            text-align: center;
+        }
+
+        nav a, footer a {
+            color: #f5d6a1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover, footer a:hover {
+            color: #d98c3a;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        section {
+            display: none;
+            background-color: #f5d6a1;
+            border: 3px solid #d98c3a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        figure {
+            text-align: center;
+            margin: 25px auto;
+        }
+
+        img {
+            max-width: 100%;
+            inline-size: 600px;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #7a3e12;
+        }
+
+        figcaption {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .prompt-note {
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #7a3e12;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d98c3a;
+            color: white;
+        }
+
+        button {
+            background-color: #7a3e12;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #d98c3a;
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cooking with Tyreek</h1>
+
+        <nav>
+            <a href="#" onclick="showSection('what')">What</a> 🍳
+            <a href="#" onclick="showSection('who')">Who</a> 🍳
+            <a href="#" onclick="showSection('when')">When</a> 🍳
+            <a href="#" onclick="showSection('where')">Where</a> 🍳
+            <a href="#" onclick="showSection('how')">How</a> 🍳
+            <a href="#" onclick="showSection('why')">Why</a> 🍳
+            <a href="#" onclick="showSection('ai-prompts')">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what" class="active">
+            <h2>What: Home Cooking</h2>
+            <p>Cooking is one of my favorite hobbies because it lets me be creative 
+                while also making something useful. Whether I am making a quick meal, 
+                trying a new recipe, or improving something I already know how to cook, 
+                it gives me a chance to experiment and learn.
+            </p>
+            <p>This hobby site is about home cooking, simple meals, kitchen skills, 
+                and the enjoyment of making food from scratch. Cooking does not have 
+                to be fancy to be meaningful. Sometimes the best meals are simple, warm, 
+                and made with care.
+            </p>
+
+            <figure>
+                <img src="images/first.png" alt="Cozy kitchen with ingredients and cooking tools">
+                <figcaption>A cozy kitchen setup</figcaption>
+                <!--AI prompt: Warm realistic photo of a cozy 
+                    kitchen counter with fresh vegetables, spices, and cooking 
+                    utensils, soft lighting, no people.
+                -->
+            </figure>
+
+            <ul>
+                <li>Cooking helps me relax.</li>
+                <li>It gives me a chance to try new flavors.</li>
+                <li>It is a useful skill for everyday life.</li>
+            </ul>
+        </section>
+
+        <section id="who">
+            <h2>Who: About Me as a Cook</h2>
+            <p>I am not a professional chef, but I enjoy cooking because it gives me 
+                control over what I eat and how my food tastes. I like learning by 
+                trying things out, adjusting seasonings, and figuring out what works best.
+            </p>
+            <p>My cooking style is casual and practical. I like food that tastes good, 
+                fills you up, and does not require overly complicated steps. I also enjoy 
+                meals that can be shared with family or friends.
+            </p>
+
+            <figure>
+                <img src="images/chefimage.png" alt="Home cooking scene with food being prepared">
+                <figcaption>Cooking as a personal hobby</figcaption>
+                <!--AI prompt: Warm realistic image of a home 
+                    cook preparing food in a cozy kitchen, close-up of ingredients 
+                    and cooking tools, no visible face.
+                -->
+            </figure>
+
+            <ul>
+                <li>I like simple meals with strong flavor.</li>
+                <li>I enjoy learning new cooking techniques.</li>
+                <li>I like making food that feels comforting.</li>
+            </ul>
+        </section>
+
+        <section id="when">
+            <h2>When: Best Times to Cook</h2>
+            <p>The best time to cook depends on the type of meal. Breakfast meals are 
+                usually quick, while dinner gives more time to prepare something filling. 
+                Weekends are great for trying new recipes because there is less pressure to rush.
+            </p>
+            <p>I also like cooking when I need a break from schoolwork or daily responsibilities. 
+                It gives me something hands-on to focus on.
+            </p>
+
+            <figure>
+                <img src="images/homecookedmeal.png" alt="Dinner table with a home-cooked meal">
+                <figcaption>A good time for a home-cooked dinner</figcaption>
+                <!--AI prompt: Warm realistic photo of a home-cooked 
+                    dinner on a wooden table, cozy lighting, plates and simple decorations.
+                -->
+            </figure>
+
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Best Meal Idea</th>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td>Eggs, toast, pancakes, or oatmeal</td>
+                </tr>
+                <tr>
+                    <td>Afternoon</td>
+                    <td>Sandwiches, rice bowls, or pasta</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>Seafood, chicken, vegetables, or comfort meals</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="where">
+            <h2>Where: Best Places for Cooking</h2>
+            <p>The best place to cook is a clean and organized kitchen. A good cooking 
+                space does not have to be huge. It just needs enough room to prepare 
+                ingredients, use the stove safely, and clean up afterward.
+            </p>
+            <p>Shopping for ingredients is also part of the hobby. Grocery stores, 
+                farmers markets, and local seafood markets can all give inspiration 
+                for what to cook next.
+            </p>
+
+            <figure>
+                <img src="images/farmersmarket.png" alt="Fresh vegetables and ingredients at a market">
+                <figcaption>Fresh ingredients make cooking better</figcaption>
+                <!--AI prompt: Warm realistic photo of a farmers 
+                    market table with fresh vegetables, herbs, and colorful ingredients.
+                -->
+            </figure>
+
+            <ul>
+                <li>Home kitchen</li>
+                <li>Grocery store</li>
+                <li>Farmers market</li>
+                <li>Seafood market</li>
+            </ul>
+        </section>
+
+        <section id="how">
+            <h2>How: Basic Cooking Process</h2>
+            <p>Cooking usually starts with choosing a recipe or deciding what ingredients 
+                are available. After that, I prepare the ingredients, season the food, 
+                cook it carefully, and taste along the way.
+            </p>
+            <p>One of the most important parts of cooking is patience. Rushing can lead 
+                to burnt food, uneven seasoning, or messy results. Taking time to prepare 
+                makes the final meal better.
+            </p>
+
+            <figure>
+                <img src="images/choppedveggies.png" alt="Chopped vegetables on a cutting board">
+                <figcaption>Preparation is part of the process</figcaption>
+                <!--AI prompt: Warm realistic photo of chopped 
+                    vegetables, herbs, and a chef knife on a wooden cutting board.
+                -->
+            </figure>
+
+            <ol>
+                <li>Choose a meal or recipe.</li>
+                <li>Gather ingredients and tools.</li>
+                <li>Prep and season the food.</li>
+                <li>Cook carefully and taste as you go.</li>
+                <li>Plate the food and clean up.</li>
+            </ol>
+        </section>
+
+        <section id="why">
+            <h2>Why: Why I Enjoy Cooking</h2>
+            <p>I enjoy cooking because it feels rewarding. At the end of the process, 
+                I have something real that I made myself. It is a hobby that combines 
+                creativity, patience, and practical skill.
+            </p>
+            <p>Cooking also helps me save money and make meals that fit my own taste. 
+                Instead of always eating out, I can make something at home and adjust 
+                it exactly how I want.
+            </p>
+
+            <figure>
+                <img src="images/finishedmeal.png" alt="Finished home-cooked meal on a plate">
+                <figcaption>The reward of cooking</figcaption>
+                <!--AI prompt: Warm realistic photo of a finished
+                    home-cooked meal on a plate, cozy kitchen background, soft lighting.
+                -->
+            </figure>
+
+            <ul>
+                <li>Cooking builds confidence.</li>
+                <li>It saves money.</li>
+                <li>It allows creativity.</li>
+                <li>It makes everyday meals more enjoyable.</li>
+            </ul>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts</h2>
+            <p>I used AI to help generate content ideas and image prompts 
+                for this hobby website.
+            </p>
+            <p>The images should all follow a warm, realistic cooking photography 
+                style so the site feels consistent.
+            </p>
+
+            <figure>
+                <img src="images/cookingutensils.png" alt="Cooking tools and ingredients arranged on a counter">
+                <figcaption>Cooking tools and ingredients</figcaption>
+                <!--AI prompt: Warm realistic photo of cooking 
+                    tools, spices, fresh ingredients, and a wooden kitchen counter, cozy lighting.
+                -->
+            </figure>
+
+            <ul>
+                <li>Prompt for code: Give me content ideas for my cooking
+                     hobby site withsections for Who, What, When, Where, How, and Why.
+                </li>
+                <li>Prompt for content: Is my content casual and student-friendly content 
+                    about cooking as a hobby, if not can you help me make it so?
+                </li>
+                <li>Prompt for images: Generate warm realistic cooking-themed images
+                     with a consistent cozy kitchen style.
+                </li>
+                <li> Prompt for functionality: I am having trouble getting my nav links
+                     and pages to function on a single website vs multiple parts. can you help?
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        
+
+        <nav>
+            
+            <a href="https://github.com/touting1" target="_blank">GitHub</a>
+            |
+            <a href="https://www.freecodecamp.org/touting1" target="_blank">freeCodeCamp</a>
+            |
+            <a href="https://www.codecademy.com/profiles/touting1" target="_blank">Codecademy</a>
+            |
+            <a href="https://www.linkedin.com/in/tyreek-outing-9ba874283" target="_blank">LinkedIn</a>
+        </nav>
+
+        <p>
+            Designed by <a href="toutyinc.com/index.html" target="_blank">Touty Inc.</a> ©2026,
+            <a href="https://www.freecodecamp.org/certification/touting1/responsive-web-design-v9" target="_blank">
+                Certified in Responsive Web Design
+            </a>
+        </p>
+
+       
+
+
+    
+
+        
+    </footer>
+
+    <!-- I used AI to help me get my navigation functionality working correctly -->
+    <script>
+        
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll("main section");
+
+            sections.forEach(function(section) {
+                section.classList.remove("active");
+            });
+
+            document.getElementById(sectionId).classList.add("active");
+        }
+
+        document.getElementById("validation_link_html").setAttribute(
+            "href",
+            "https://validator.w3.org/check?uri=" + location.href
+        );
+
+        document.getElementById("validation_link_css").setAttribute(
+            "href",
+            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+    </script>
+</body>
+</html>
