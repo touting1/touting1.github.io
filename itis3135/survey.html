@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyreek Outing's Course Site | Tenacious Octopus | ITIS3135 | Survey</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        .survey-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 25px;
+            background-image: url("images/background.png");
+            border: 2px solid #8a6f45;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+        }
+
+        #description {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        #survey-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        #survey-form h3 {
+            margin-bottom: 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #survey-form input,
+        #survey-form textarea {
+            padding: 10px;
+            border: 1px solid #8a6f45;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        #survey-form textarea {
+            min-height: 85px;
+            resize: vertical;
+        }
+
+        #submit {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #d8b56d;
+            border: 1px solid #8a6f45;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #c79f54;
+        }
+    </style>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
     <div data-include="components/header.html"></div>
 
     <main>
@@ -18,90 +78,50 @@
             Please enter information from your introduction page.
         </p>
 
-    <form id="survey-form">
+        <div class="survey-card">
+            <form id="survey-form">
+                <h3>Basic Information</h3>
 
-      <!-- Name -->
-      <label id="name-label" for="name">Name:</label>
-      <input
-        id="name"
-        type="text"
-        required
-        placeholder="Enter your name"
-      />
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" required placeholder="Enter your name">
 
-      <!-- Email -->
-      <label id="email-label" for="email">Email:</label>
-      <input
-        id="email"
-        type="email"
-        required
-        placeholder="Enter your email"
-      />
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" required placeholder="Enter your email">
 
-      <!-- Number -->
-      <label id="number-label" for="number">Age:</label>
-      <input
-        id="number"
-        type="number"
-        min="1"
-        max="120"
-        placeholder="Enter your age"
-      />
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" min="1" max="120" placeholder="Enter your age">
 
-      <!-- Personal Background -->
-  <label for="personal-background">Personal Background:</label>
-  <textarea
-    id="personal-background"
-    placeholder="Enter your personal background"
-    required
-  ></textarea>
+                <h3>Background Information</h3>
 
-  <!-- Professional Background -->
-  <label for="professional-background">Professional Background:</label>
-  <textarea
-    id="professional-background"
-    placeholder="Enter your professional background"
-    required
-  ></textarea>
+                <label for="personal-background">Personal Background:</label>
+                <textarea id="personal-background" placeholder="Enter your personal background" required></textarea>
 
-  <!-- Academic Background -->
-  <label for="academic-background">Academic Background:</label>
-  <textarea
-    id="academic-background"
-    placeholder="Enter your academic background"
-    required
-  ></textarea>
+                <label for="professional-background">Professional Background:</label>
+                <textarea id="professional-background" placeholder="Enter your professional background" required></textarea>
 
-  <!-- Primary Computer -->
-  <label for="primary-computer">Primary Computer:</label>
-  <input
-    id="primary-computer"
-    type="text"
-    placeholder="Enter your primary computer"
-    required
-  />
+                <label for="academic-background">Academic Background:</label>
+                <textarea id="academic-background" placeholder="Enter your academic background" required></textarea>
 
-  <!-- Courses -->
-  <label for="courses">Courses:</label>
-  <textarea
-    id="courses"
-    placeholder="List the courses you are taking"
-    required
-  ></textarea>
+                <h3>Course Information</h3>
 
-      <!-- Textarea -->
-      <label for="comments">Additional Comments:</label>
-      <textarea id="comments"></textarea>
+                <label for="primary-computer">Primary Computer:</label>
+                <input id="primary-computer" type="text" placeholder="Enter your primary computer" required>
 
-      <!-- Submit -->
-      <button id="submit" type="submit">Submit</button>
+                <label for="courses">Courses:</label>
+                <textarea id="courses" placeholder="List the courses you are taking" required></textarea>
 
-    </form>
+                <h3>Extra Information</h3>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Enter any extra comments here"></textarea>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
     <div data-include="components/footer.html"></div>
 
     <script src="scripts/include.min.js"></script>
-
 </body>
 </html>
