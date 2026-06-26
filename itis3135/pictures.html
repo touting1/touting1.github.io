@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyreek Outing's Tenacious Octopus | ITIS3135 | Pictures</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Everything Pictures</h2>
+
+        <p>
+            This page demonstrates my understanding of digital images and the 
+            factors that affect their quality, appearance, and performance on the web. 
+            It explores the differences between image dimensions, such as comparing a 
+            3000×4000 pixel image to a 300×400 pixel image, and explains how image size 
+            impacts both visual quality and file storage requirements. It also examines 
+            what happens to an image's file size when its dimensions are reduced, as well 
+            as the strengths and best use cases for common web image formats such as 
+            JPG, PNG, and GIF. The page discusses image proportionality and aspect 
+            ratio, showing why maintaining the correct proportions is important for preventing 
+            distortion and ensuring images display properly across different devices and screen sizes.
+        </p>
+
+        <section>
+    <h3>First Image Manipulation Example</h3>
+
+    <p>
+        I chose this dolphin image from Pexels because it is colorful and has clear detail in the water.
+        It also includes an animal, and I love animals.The original image is a JPG image, taken 
+        by a photographer named Geni Hoka. When looking at other images taken by this 
+        photographer, I gathered that they like to capture images of life.
+        I'm usng the image to demonstrate different image formats,file sizes, resizing, and proportionality.
+    </p>
+
+    <article>
+        <h4>Original Image</h4>
+
+        <p>
+            Click to open the image in its original JPG format:
+            <a href="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg" target="_blank">
+                Original Dolphin Image
+            </a>
+            Click to open the image in its GIF format:
+            <a href="images/dolphin_image_as_gif.gif" target="_blank">
+                GIF Dolphin Image
+            </a>
+            Click to open the image in its greyscale JPG format:
+            <a href="images/dolphin_image_greyscale.jpg" target="_blank">
+                Greyscale Dolphin Image
+            </a>
+            Click to open the image in its black and white JPG format:
+            <a href="images/dolphin_image_in_black_and_white.jpg" target="_blank">
+                Black and White Dolphin Image
+            </a>
+        </p>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
+                 alt="Dolphin swimming in blue water"
+                 style="width: 300px; height: auto;">
+            <figcaption>Original dolphin image resized proportionally with CSS.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <h4>Downsizing Images with CSS</h4>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
+                 alt="Smaller dolphin image"
+                 style="width: 150px; height: auto;">
+            <figcaption>This image is visually smaller, but the original file is still being loaded.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <h4>Improper Image Proportions with CSS</h4>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
+                 alt="Distorted dolphin image"
+                 style="width: 300px; height: 100px;">
+            <figcaption>This image is distorted because the width and height do not match the original proportions.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+    <h4>Improper Enlarging with CSS</h4>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
+                alt="Enlarged dolphin image"
+                style="width: 600px; height: auto;">
+            <figcaption>This image is enlarged with CSS, which can make it look blurry or lower quality.</figcaption>
+        </figure>
+    </article>
+</section>
+
+<hr>
+
+<section>
+    <h3>Second Image Manipulation Example</h3>
+
+    <p>
+        I chose this personal image because it includes a cat toy, which is something that 
+        my cat loves and I love my cat. This image helps show proportionality. I used this image 
+        to show the importance of maintaining proper image proportions.This image can 
+        be used to compare proper resizing with distorted resizing.
+    </p>
+
+    <article>
+        <h4>Original Image</h4>
+
+        <p>
+            Click to open the image in its original JPG format:
+            <a href="images/cat_toy_next_to_hand_tyreek-outing.jpg" target="_blank">
+                Original Cat Toy Image
+            </a>
+            Click to open the image in its GIF format:
+            <a href="images/cat_toy_and_hand_gif.gif" target="_blank">
+                GIF Cat Toy Image
+            </a>
+            Click to open the image in its greyscale JPG format:
+            <a href="images/cat_toy_and_hand_greyscale.jpg" target="_blank">
+                Greyscale Cat Toy Image
+            </a>
+            Click to open the image in its black and white JPG format:
+            <a href="images/cat_toy_and_hand_black_and_white.jpg" target="_blank">
+                Black and White Cat Toy Image
+            </a>
+        </p>
+
+        <figure>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
+                 alt="Cat toy next to a hand"
+                 style="width: 300px; height: auto;">
+            <figcaption>Original personal image resized proportionally with CSS.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+    <h4>Downsizing Images with CSS</h4>
+
+        <figure>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
+                alt="Smaller cat toy image next to a hand"
+                style="width: 150px; height: auto;">
+            <figcaption>This image is displayed smaller with CSS while keeping the correct proportions.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <h4>Improper Image Proportions with CSS</h4>
+
+        <figure>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
+                 alt="Distorted cat toy image"
+                 style="width: 300px; height: 100px;">
+            <figcaption>This image is squished because the height was changed without keeping the correct ratio.</figcaption>
+        </figure>
+    </article>
+    
+    <article>
+    <h4>Improper Enlarging with CSS</h4>
+
+        <figure>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
+                alt="Enlarged cat toy image next to a hand"
+                style="width: 600px; height: auto;">
+            <figcaption>This image is enlarged with CSS, which can reduce the visual quality and make details look blurry.</figcaption>
+        </figure>
+    </article>
+</section>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+
+</body>
+</html>
