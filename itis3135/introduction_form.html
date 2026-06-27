@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyreek Outing's Tenacious Octopus | ITIS3135 | Introduction Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+
+        <form id="intro-form" class="intro-form">
+            <label>First Name:
+                <input type="text" id="first-name" value="Tyreek" placeholder="First name" required>
+            </label>
+
+            <label>Middle Initial:
+                <input type="text" id="middle-name" value="J." placeholder="Middle initial">
+            </label>
+
+            <label>Last Name:
+                <input type="text" id="last-name" value="Outing" placeholder="Last name" required>
+            </label>
+
+            <label>Picture:
+                <input type="file" id="picture" accept="image/*">
+            </label>
+
+            <label>Picture Caption:
+                <input type="text" id="caption" value="My Pets" placeholder="Picture caption" required>
+            </label>
+
+            <label>Personal Background:
+                <textarea id="personal-background" required>I am a 27 year old “Adult student” attending UNCC. I am also a Military Veteran using my benefits to further my education and achieve some goals I always had (i.e obtaining a college degree) from a young age.</textarea>
+            </label>
+
+            <label>Professional Background:
+                <textarea id="professional-background" required>I have never worked in a technical field that requires me to do anything I'm currently learning for my degree. However, I do have some mechanical experience and other blue collar job experience.</textarea>
+            </label>
+
+            <label>Academic Background:
+                <textarea id="academic-background" required>Computer Science, Senior, class of Fall 2027.</textarea>
+            </label>
+
+            <label>Primary Computer:
+                <textarea id="primary-computer" required>Windows Surface Pro, Windows, Laptop, My home office.</textarea>
+            </label>
+
+            <h3>Courses I’m Taking</h3>
+
+            <div id="courses">
+                <div class="course">
+                    <input type="text" class="department" value="MATH" placeholder="Department" required>
+                    <input type="text" class="number" value="1242" placeholder="Number" required>
+                    <input type="text" class="course-name" value="Calculus II" placeholder="Course name" required>
+                    <input type="text" class="reason" value="I’m taking this course because it is a degree requirement." placeholder="Reason" required>
+                    <button type="button" class="delete-course">Delete</button>
+                </div>
+
+                <div class="course">
+                    <input type="text" class="department" value="ITIS" placeholder="Department" required>
+                    <input type="text" class="number" value="3135" placeholder="Number" required>
+                    <input type="text" class="course-name" value="Front-End Web Application Development" placeholder="Course name" required>
+                    <input type="text" class="reason" value="I’m taking this course to brush up on my front-end development skills." placeholder="Reason" required>
+                    <button type="button" class="delete-course">Delete</button>
+                </div>
+
+                <div class="course">
+                    <input type="text" class="department" value="ITIS" placeholder="Department" required>
+                    <input type="text" class="number" value="3310" placeholder="Number" required>
+                    <input type="text" class="course-name" value="Software Arch & Design" placeholder="Course name" required>
+                    <input type="text" class="reason" value="I’m taking this course because I thought it would help further my knowledge and prepare me for post graduation." placeholder="Reason" required>
+                    <button type="button" class="delete-course">Delete</button>
+                </div>
+            </div>
+
+            <button type="button" id="add-course">Add Course</button>
+
+            <label>Quote:
+                <input type="text" id="quote" value="Just 'cause you pour syrup on something doesn't make it pancakes." placeholder="Quote" required>
+            </label>
+
+            <label>Quote Author:
+                <input type="text" id="quote-author" value="Samuel L. Jackson" placeholder="Quote author" required>
+            </label>
+
+            <h3>Links</h3>
+
+            <label>GitHub:
+                <input type="url" id="github"
+                    value="https://github.com/touting1"
+                    placeholder="GitHub URL"
+                    required>
+            </label>
+
+            <label>ITIS3135.io:
+                <input type="url" id="githubio"
+                    value="https://touting1.github.io/itis3135/"
+                    placeholder="GitHub Pages URL"
+                    required>
+            </label>
+
+            <label>freeCodeCamp:
+                <input type="url" id="fcc"
+                    value="https://www.freecodecamp.org/touting1"
+                    placeholder="freeCodeCamp URL"
+                    required>
+            </label>
+
+            <label>Codecademy:
+                <input type="url" id="codecademy"
+                    value="https://www.codecademy.com/profiles/touting1"
+                    placeholder="Codecademy URL"
+                    required>
+            </label>
+
+            <label>LinkedIn:
+                <input type="url" id="linkedin"
+                    value="https://www.linkedin.com/in/tyreek-outing-9ba874283"
+                    placeholder="LinkedIn URL"
+                    required>
+            </label>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" id="clear-form">Clear</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+</html>

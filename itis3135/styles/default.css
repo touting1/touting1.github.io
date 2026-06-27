@@ -7,7 +7,7 @@ header,
 footer {
     background-color: #969bd2;
     color: rgb(228, 56, 179);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -174,4 +174,71 @@ cite {
 .enlarge-examples figure {
     width: 320px;
     text-align: center;
+}
+.intro-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(158, 162, 153, 0.15);
+}
+
+.intro-form label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: bold;
+    color: #931707;
+}
+
+.intro-form input,
+.intro-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 2px solid rgb(100, 9, 226);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #b90f58;
+    background-color: rgb(215, 203, 175);
+}
+
+.intro-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.course {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.course input {
+    margin-bottom: 10px;
+}
+
+.intro-form button {
+    padding: 10px 16px;
+    margin: 8px 5px 8px 0;
+    border: none;
+    border-radius: 8px;
+    background-color:  #969bd2;
+    color: rgb(73, 19, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.intro-form button:hover {
+    background-color: #61eddd;
+}
+.submitted-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.submitted-links a {
+    margin: 0 4px;
 }
