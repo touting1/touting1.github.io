@@ -46,14 +46,20 @@
             <a href="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg" target="_blank">
                 Original Dolphin Image
             </a>
+        </p>
+        <p>
             Click to open the image in its GIF format:
             <a href="images/dolphin_image_as_gif.gif" target="_blank">
                 GIF Dolphin Image
             </a>
+        </p>
+        <p>
             Click to open the image in its greyscale JPG format:
             <a href="images/dolphin_image_greyscale.jpg" target="_blank">
                 Greyscale Dolphin Image
             </a>
+        </p>
+        <p>
             Click to open the image in its black and white JPG format:
             <a href="images/dolphin_image_in_black_and_white.jpg" target="_blank">
                 Black and White Dolphin Image
@@ -79,25 +85,68 @@
         </figure>
     </article>
 
+     <article>
+        <h4>Proper Reduction of Image with Editor </h4>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                 alt="Smaller dolphin image properly resized"
+                 style="width: 150px; height: auto;">
+            <figcaption>This image is visually smaller, but the original file has been properly resized.</figcaption>
+        </figure>
+    </article>
+
     <article>
         <h4>Improper Image Proportions with CSS</h4>
 
-        <figure>
-            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
-                 alt="Distorted dolphin image"
-                 style="width: 300px; height: 100px;">
-            <figcaption>This image is distorted because the width and height do not match the original proportions.</figcaption>
-        </figure>
+        <div class="proportion-examples">
+            <figure>
+                <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                    alt="Dolphin image with width reduced by 33 percent"
+                    style="width: 100px; height: 150px;">
+                <figcaption>Width is 33% smaller while height stays the same, making the image look too skinny.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                    alt="Dolphin image with width reduced twice"
+                    style="width: 67px; height: 150px;">
+                <figcaption>Width is reduced another 33% while height stays the same, making the image even skinnier.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                    alt="Dolphin image with height reduced by 33 percent"
+                    style="width: 150px; height: 100px;">
+                <figcaption>Height is 33% smaller while width stays the same, making the image look squished.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                    alt="Dolphin image with height reduced twice"
+                    style="width: 150px; height: 67px;">
+                <figcaption>Height is reduced another 33% while width stays the same, making the image even flatter.</figcaption>
+            </figure>
+        </div>
     </article>
 
     <article>
     <h4>Improper Enlarging with CSS</h4>
 
         <figure>
-            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732.jpg"
-                alt="Enlarged dolphin image"
-                style="width: 600px; height: auto;">
-            <figcaption>This image is enlarged with CSS, which can make it look blurry or lower quality.</figcaption>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_600x900.jpg"
+                alt="Dolphin image enlarged from the 50 percent resized version"
+                style="width: 250px; height: auto;">
+            <figcaption> This image was reduced to 50% of its original size in an image 
+                editor and then enlarged with CSS. It maintains relatively good image quality.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/dolphin_in_water_pexels_geni-hoka-35766732_resized_150x225_resized.jpg"
+                alt="Dolphin image enlarged from the 25 percent resized version"
+                style="width: 250px; height: auto;">
+            <figcaption> This image was reduced to 25% of its original size before being enlarged with CSS. Because it 
+                contains fewer pixels, it appears noticeably blurrier and less detailed.</figcaption>
         </figure>
     </article>
 </section>
@@ -122,14 +171,20 @@
             <a href="images/cat_toy_next_to_hand_tyreek-outing.jpg" target="_blank">
                 Original Cat Toy Image
             </a>
+        </p>
+        <p>
             Click to open the image in its GIF format:
             <a href="images/cat_toy_and_hand_gif.gif" target="_blank">
                 GIF Cat Toy Image
             </a>
+        </p>
+        <p>
             Click to open the image in its greyscale JPG format:
             <a href="images/cat_toy_and_hand_greyscale.jpg" target="_blank">
                 Greyscale Cat Toy Image
             </a>
+        </p>
+        <p>
             Click to open the image in its black and white JPG format:
             <a href="images/cat_toy_and_hand_black_and_white.jpg" target="_blank">
                 Black and White Cat Toy Image
@@ -156,26 +211,75 @@
     </article>
 
     <article>
-        <h4>Improper Image Proportions with CSS</h4>
+        <h4>Proper Reduction of Image with Editor </h4>
 
         <figure>
-            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
-                 alt="Distorted cat toy image"
-                 style="width: 300px; height: 100px;">
-            <figcaption>This image is squished because the height was changed without keeping the correct ratio.</figcaption>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                 alt="Smaller cat toy image properly resized"
+                 style="width: 150px; height: auto;">
+            <figcaption>This image is visually smaller, but the original file has been properly resized.</figcaption>
         </figure>
+    </article>
+
+    <article>
+        <h4>Improper Image Proportions with CSS</h4>
+
+        <div class="proportion-examples">
+            <figure>
+                <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                    alt="Cat toy image with width reduced by 33 percent"
+                    style="width: 100px; height: 150px;">
+                <figcaption>Width is 33% smaller while the height stays the same, causing the image to appear too narrow.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                    alt="Cat toy image with width reduced twice"
+                    style="width: 67px; height: 150px;">
+                <figcaption>Width is reduced another 33% while the height stays the same, making the image appear even narrower.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                    alt="Cat toy image with height reduced by 33 percent"
+                    style="width: 150px; height: 100px;">
+                <figcaption>Height is 33% smaller while the width stays the same, making the image look squished.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                    alt="Cat toy image with height reduced twice"
+                    style="width: 150px; height: 67px;">
+                <figcaption>Height is reduced another 33% while the width stays the same, making the image appear even flatter.</figcaption>
+            </figure>
+        </div>
     </article>
     
     <article>
     <h4>Improper Enlarging with CSS</h4>
 
+    <div class="enlarge-examples">
+
         <figure>
-            <img src="images/cat_toy_next_to_hand_tyreek-outing.jpg"
-                alt="Enlarged cat toy image next to a hand"
-                style="width: 600px; height: auto;">
-            <figcaption>This image is enlarged with CSS, which can reduce the visual quality and make details look blurry.</figcaption>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_600x800.jpg"
+                 alt="Cat toy image enlarged from the 50 percent resized version"
+                 style="width: 300px; height: auto;">
+            <figcaption>
+                This image was resized to 50% in an image editor and then enlarged with CSS. It retains better quality because it contains more pixels.
+            </figcaption>
         </figure>
-    </article>
+
+        <figure>
+            <img src="images/cat_toy_next_to_hand_tyreek-outing_resized_150x200_resized.jpg"
+                 alt="Cat toy image enlarged from the 25 percent resized version"
+                 style="width: 300px; height: auto;">
+            <figcaption>
+                This image was reduced to 25% of the original size before being enlarged with CSS. Because it contains fewer pixels, it appears noticeably blurrier.
+            </figcaption>
+        </figure>
+
+    </div>
+</article>
 </section>
     </main>
     <div data-include="components/footer.html"></div>
