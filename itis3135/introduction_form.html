@@ -8,25 +8,64 @@
     <link rel="icon" type="image/png" href="images/favicon2.png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div data-include="components/header.html"></div>
 
     <main>
         <h2>Introduction Form</h2>
-        <h3>Please submit the form below.</h3>
 
         <form id="intro-form" class="intro-form">
             <label>First Name:
                 <input type="text" id="first-name" value="Tyreek" placeholder="First name" required>
             </label>
 
-            <label>Middle Initial:
+            <label>Middle Initial (Optional):
                 <input type="text" id="middle-name" value="J." placeholder="Middle initial">
+            </label>
+
+            <label>Nickname / Preferred Name (Optional):
+                <input type="text" id="nickname" value="" placeholder="Nickname or preferred name">
             </label>
 
             <label>Last Name:
                 <input type="text" id="last-name" value="Outing" placeholder="Last name" required>
             </label>
+
+            <div class="optional-field">
+                <label>Acknowledgment Statement:
+                    <input type="text" id="acknowledgment" value="I understand that what I put here is publicly available on the web and I won’t put anything here I don’t want the public to see." placeholder="Acknowledgment statement" required>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
+            <div class="optional-field">
+                <label>Acknowledgment Date:
+                    <input type="text" id="ack-date" value="6/27/2026" placeholder="MM/DD/YYYY" required>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
+            <div class="optional-field">
+                <label>Mascot Adjective:
+                    <input type="text" id="mascot-adjective" value="Tenacious" placeholder="Mascot adjective" required>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
+            <div class="optional-field">
+                <label>Mascot Animal:
+                    <input type="text" id="mascot-animal" value="Octopus" placeholder="Mascot animal" required>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
+            <div class="optional-field">
+                <label>Divider:
+                    <input type="text" id="divider" value="|" placeholder="Divider symbol" required>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
 
             <label>Picture:
                 <input type="file" id="picture" accept="image/*">
@@ -36,8 +75,16 @@
                 <input type="text" id="caption" value="My Pets" placeholder="Picture caption" required>
             </label>
 
+            <label>Personal Statement:
+                <textarea id="personal-statement" placeholder="Personal statement" required>I enjoy 
+                    coding and learning new technologies while working toward my Computer Science degree.</textarea>
+            </label>
+
             <label>Personal Background:
-                <textarea id="personal-background" required>I am a 27 year old “Adult student” attending UNCC. I am also a Military Veteran using my benefits to further my education and achieve some goals I always had (i.e obtaining a college degree) from a young age.</textarea>
+                <textarea id="personal-background" required>I am a 27 year old “Adult student” 
+                    attending UNCC. I am also a Military Veteran using my benefits to further 
+                    my education and achieve some goals I always had (i.e obtaining a college 
+                    degree) from a young age.</textarea>
             </label>
 
             <label>Professional Background:
@@ -90,49 +137,52 @@
                 <input type="text" id="quote-author" value="Samuel L. Jackson" placeholder="Quote author" required>
             </label>
 
+            <div class="optional-field">
+                <label>Funny Thing (Optional):
+                    <textarea id="funny-thing" placeholder="Funny thing"></textarea>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
+            <div class="optional-field">
+                <label>Something I Would Like to Share (Optional):
+                    <textarea id="share" placeholder="Something I would like to share"></textarea>
+                </label>
+                <button type="button" class="delete-optional">Delete</button>
+            </div>
+
             <h3>Links</h3>
 
             <label>GitHub:
-                <input type="url" id="github"
-                    value="https://github.com/touting1"
-                    placeholder="GitHub URL"
-                    required>
+                <input type="url" id="github" value="https://github.com/touting1" placeholder="GitHub URL" required>
             </label>
 
             <label>ITIS3135.io:
-                <input type="url" id="githubio"
-                    value="https://touting1.github.io/itis3135/"
-                    placeholder="GitHub Pages URL"
-                    required>
+                <input type="url" id="githubio" value="https://touting1.github.io/itis3135/" placeholder="GitHub Pages URL" required>
             </label>
 
             <label>freeCodeCamp:
-                <input type="url" id="fcc"
-                    value="https://www.freecodecamp.org/touting1"
-                    placeholder="freeCodeCamp URL"
-                    required>
+                <input type="url" id="fcc" value="https://www.freecodecamp.org/touting1" placeholder="freeCodeCamp URL" required>
             </label>
 
             <label>Codecademy:
-                <input type="url" id="codecademy"
-                    value="https://www.codecademy.com/profiles/touting1"
-                    placeholder="Codecademy URL"
-                    required>
+                <input type="url" id="codecademy" value="https://www.codecademy.com/profiles/touting1" placeholder="Codecademy URL" required>
             </label>
 
             <label>LinkedIn:
-                <input type="url" id="linkedin"
-                    value="https://www.linkedin.com/in/tyreek-outing-9ba874283"
-                    placeholder="LinkedIn URL"
-                    required>
+                <input type="url" id="linkedin" value="https://www.linkedin.com/in/tyreek-outing-9ba874283" placeholder="LinkedIn URL" required>
             </label>
 
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
             <button type="button" id="clear-form">Clear</button>
+            <button type="button" id="generate-html">Generate HTML</button>
+            <button type="button" id="generate-json">Generate JSON</button>
+            <button type="button" id="generate-xml">Generate XML</button>
         </form>
 
         <div id="result"></div>
+        <div id="code-output"></div>
     </main>
 
     <div data-include="components/footer.html"></div>
