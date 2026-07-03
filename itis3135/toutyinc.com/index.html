@@ -4,59 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Touty Inc.</title>
+    <link rel="icon" type="image/png" href="../images/toutyinclogo.png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <!--
     Color Palette:
     https://coolors.co/86cb92-71b48d-404e7c-251f47-260f26
     -->
-
+    
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #86CB92;
-            color: #260F26;
+            color: #621362;
+            font-size: 20px;
         }
 
-        header {
-            background-color: #251F47;
+       header {
+            background-color: #443982;
             color: white;
-            text-align: center;
-            padding: 25px;
+            max-width: 1250px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            gap: 25px; 
+            flex-wrap: wrap; 
         }
 
         header img {
-            vertical-align: middle;
-            margin-right: 12px;
+            width: 150px;
+            height: auto;
         }
 
         h1 {
-            display: inline;
-            font-size: 2.5rem;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .tagline {
+            margin: 0;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #86CB92;
+            white-space: nowrap;
         }
 
         header p {
             color: #86CB92;
             font-size: 1.1rem;
-            margin-bottom: 0;
+            margin: 5px 0 0;
         }
 
         main {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 30px auto;
-            padding: 25px;
+            padding: 40px;
             background-color: #71B48D;
             border-radius: 12px;
         }
 
         h2 {
-            color: #251F47;
-            border-bottom: 3px solid #404E7C;
+            color: #4d4193;
+            border-bottom: 3px solid #596ba8;
             padding-bottom: 8px;
         }
 
         h3 {
-            color: #251F47;
+            color: #4a3e8a;
         }
 
         p {
@@ -73,8 +93,8 @@
         }
 
         address {
-            background-color: white;
-            color: #260F26;
+            background-color: rgb(223, 217, 217);
+            color: #763176;
             padding: 18px;
             border-left: 6px solid #404E7C;
             border-radius: 8px;
@@ -83,21 +103,23 @@
         }
 
         footer {
-            background-color: #260F26;
+            background-color: #443982;
             color: white;
             text-align: center;
-            padding: 18px;
-            margin-top: 30px;
+            max-width: 1250px;
+            margin: 20px auto;
+            padding: 20px 30px;
+            border-radius: 15px;
         }
 
         footer p {
             margin: 5px;
         }
 
-        .tagline {
+        
+        a{
             color: #86CB92;
-            font-weight: bold;
-
+            text-decoration: none;
         }
        
     </style>
@@ -106,20 +128,22 @@
 <body>
 
     <header>
-        <img src="../images/toutyinclogo.png" alt="Touty Inc. Logo" width="200">
-        <h1>Touty Inc.</h1>
-        <p>Transforming Ideas Into Digital Experiences</p>
+        <div class="header-content">
+            <img src="../images/toutyinclogo.png" alt="Touty Inc. Logo" width="220">
+
+            <div>
+                <h1>TOUTY INC.</h1>
+                <p class="tagline">Transforming Ideas Into Digital Experiences</p>
+            </div>
+        </div>
     </header>
 
     <main>
         <h2>Touty Inc. Services</h2>
 
         <p>
-            Touty Inc. is a creative web development and technology consulting
-            firm dedicated to helping businesses build a strong digital presence.
-            We specialize in modern websites, responsive layouts, clean design,
-            and technology solutions that help clients turn their ideas into
-            professional online experiences.
+            Touty Inc. designs responsive websites, modern web applications, 
+            and technology solutions that help businesses build a professional online presence.
         </p>
 
         <h3>Why Clients Choose Touty Inc.</h3>
@@ -131,18 +155,11 @@
             <li>Fast and secure web applications</li>
             <li>Professional branding and digital identity support</li>
             <li>Search engine optimization strategies</li>
-            <li>Mobile-first development practices</li>
-            <li>Affordable technology consulting packages</li>
-            <li>Reliable website maintenance and support</li>
-            <li>Creative problem solving for unique client needs</li>
         </ul>
 
         <p>
-            At Touty Inc., our goal is to help every client feel confident about
-            their online presence. Whether a client needs a personal website,
-            a business landing page, or a custom web application, we focus on
-            building solutions that are professional, accessible, and ready for
-            the future.
+            We work closely with every client to create secure, accessible, 
+            and reliable digital solutions that are built for long-term success.
         </p>
 
         <address>
@@ -156,7 +173,7 @@
 
     <footer>
         <p>Page created by Touty Inc. © 2026</p>
-        <p class="tagline">Transforming Ideas Into Digital Experiences</p>
+        
 
         <p>
 
