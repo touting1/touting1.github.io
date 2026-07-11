@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenacious Octopus Laundry | Services</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/bubble1.png">
+    <script src="scripts/include.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Our Laundry Services</h2>
+
+        <figure>
+            <img src="images/services.png"
+                alt="Collage showing the laundry services offered by Tenacious Octopus Laundry">
+
+            <figcaption>
+                Our octopus crew offers a variety of laundry services to meet every customer's needs, including self-service washing, wash-and-fold, express laundry, bedding care, delicate item handling, and commercial laundry services.
+            </figcaption>
+        </figure>
+
+        <p>
+            Tenacious Octopus Laundry offers a variety of services for customers who need clean clothes
+             without the stress. Our services include self-service washing, convenient wash-and-fold, 
+             express laundry for busy schedules, bedding and comforter care, delicate garment handling,
+              and commercial laundry services for local businesses. Whether you're washing everyday 
+              clothing, oversized blankets, or your favorite delicate fabrics, our experienced crew 
+              treats every item with care and attention to detail. We use modern equipment and high-quality
+               detergents to ensure every load comes out fresh, clean, and ready to wear.
+        </p>
+
+        <p>
+            Our talented octopus crew is trained to handle multiple tasks at once, making every visit fast, 
+            efficient, and enjoyable. While some octopuses carefully sort clothes by color and fabric type, 
+            others manage the washers and dryers, steam garments, fold finished laundry, and package 
+            completed orders for pickup or delivery. This teamwork allows us to provide quick turnaround
+             times without sacrificing quality. No matter which service you choose, Tenacious Octopus Laundry
+              is committed to delivering exceptional results with friendly service, dependable care, and a 
+              little bit of ocean-inspired fun.
+        </p>
+
+        <section class="card">
+            <img
+                src="images/octopus-waving.png"
+                alt="Laundry Octopus"
+                class="card-octopus"
+            >
+
+            <h3>Service Price Calculator</h3>
+
+            <label for="service">Choose a service:</label>
+            <select id="service">
+                <option value="">Select one</option>
+                <option value="8">Basic Wash - $8 per item</option>
+                <option value="14">Wash and Fold - $14 per item</option>
+                <option value="20">Express Same-Day - $20 per item</option>
+                <option value="18">Bedding Bundle - $18 per item</option>
+            </select>
+
+            <label for="item-amount">Number of clothing items:</label>
+            <input
+                type="number"
+                id="item-amount"
+                min="1"
+                value="1"
+            >
+
+            <button id="calculate-price">Calculate Price</button>
+            <button id="reset-price">Reset Calculator</button>
+
+            <p id="price-result"></p>
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
+    <div id="bubble-background"></div>
+</body>
+
+</html>

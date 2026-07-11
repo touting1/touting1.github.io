@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tenacious Octopus Laundry | Order Tracker</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/tracker.css">
+    <link rel="icon" type="image/png" href="images/bubble1.png">
+
+    <script src="scripts/include.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/tracker.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="bubble-background"></div>
+
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <section class="order-tracker">
+            <div class="tracker-heading">
+                
+
+                <h2>Track Your Laundry Voyage</h2>
+                <p class="tracker-eyebrow">Delivery Status</p>
+                <figure>
+                    <img src="images/delivery-truck.png" 
+                        alt="Delivery truck with laundry baskets" 
+                        class="tracker-image">
+                    <figcaption>
+                        Our delivery truck is on its way to pick up your laundry!
+                    </figcaption>
+                </figure>
+                
+
+                <p>
+                    Enter your tracking number to follow your order as our crew
+                    collects, cleans, folds, and delivers your laundry.
+                </p>
+            </div>
+
+            <form id="tracking-form" class="tracking-form">
+                <label for="tracking-number">
+                    Tracking Number:
+                </label>
+
+                <div class="tracking-search">
+                    <input
+                        type="text"
+                        id="tracking-number"
+                        name="tracking-number"
+                        placeholder="Example: OCTO-2026"
+                        required
+                    >
+
+                    <button type="submit">
+                        Track Order
+                    </button>
+                </div>
+            </form>
+
+            <div id="tracker-results" class="tracker-results" hidden>
+                <section class="order-summary">
+                    <h3>Order Information</h3>
+
+                    <div class="summary-grid">
+                        <div>
+                            <span class="summary-label">
+                                Tracking Number
+                            </span>
+
+                            <strong id="display-tracking-number">
+                                OCTO-2026
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span class="summary-label">
+                                Current Status
+                            </span>
+
+                            <strong id="current-status">
+                                Order Received
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span class="summary-label">
+                                Estimated Delivery
+                            </span>
+
+                            <strong id="delivery-estimate">
+                                Pickup scheduled for today
+                            </strong>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="delivery-route">
+                    <h3>Delivery Progress</h3>
+
+                    <div class="route-line">
+                        <div
+                            id="route-progress"
+                            class="route-progress">
+                        </div>
+
+                        
+                           <div id="delivery-truck"
+                            class="delivery-truck"
+                            aria-hidden="true">
+                            🚚</div>
+                        
+                    </div>
+
+                    <ol class="tracking-timeline">
+                        <li class="tracking-step active" data-step="0">
+                            <span class="step-marker">1</span>
+
+                            <div class="step-information">
+                                <strong>Order Received</strong>
+
+                                <span>
+                                    Your laundry request has been confirmed.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="tracking-step" data-step="1">
+                            <span class="step-marker">2</span>
+
+                            <div class="step-information">
+                                <strong>Laundry Collected</strong>
+
+                                <span>
+                                    Our crew has picked up your laundry.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="tracking-step" data-step="2">
+                            <span class="step-marker">3</span>
+
+                            <div class="step-information">
+                                <strong>Washing and Folding</strong>
+
+                                <span>
+                                    Your items are being cleaned and prepared.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="tracking-step" data-step="3">
+                            <span class="step-marker">4</span>
+
+                            <div class="step-information">
+                                <strong>Out for Delivery</strong>
+
+                                <span>
+                                    The company truck is heading your way.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="tracking-step" data-step="4">
+                            <span class="step-marker">5</span>
+
+                            <div class="step-information">
+                                <strong>Delivered</strong>
+
+                                <span>
+                                    Your clean laundry has arrived.
+                                </span>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="tracker-message" aria-live="polite">
+                    <span id="status-icon" class="status-icon">
+                        🧺
+                    </span>
+
+                    <div>
+                        <h3 id="status-heading">
+                            Your order is confirmed!
+                        </h3>
+
+                        <p id="status-message">
+                            Our crew is preparing to collect your laundry.
+                        </p>
+                    </div>
+                </section>
+
+                <div class="tracker-controls">
+                    <button type="button" id="previous-status">
+                        Previous Status
+                    </button>
+
+                    <button type="button" id="next-status">
+                        Advance Order
+                    </button>
+
+                    <button type="button" id="reset-status">
+                        Reset Tracker
+                    </button>
+                </div>
+
+                <p class="tracker-demo-note">
+                    The buttons are included to demonstrate how the fictional
+                    order moves through each stage.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
+</body>
+</html>

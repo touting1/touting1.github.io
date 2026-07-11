@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenacious Octopus Laundry | Contact</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/bubble1.png">
+    <script src="scripts/include.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Contact the Crew</h2>
+
+        
+
+        <p>
+            Have a question about a laundry order, service option, or special request? Our octopus crew is ready to help. 
+            Customers can reach out before visiting or use the form below to send a quick message.
+        </p>
+
+        <p>
+            Tenacious Octopus Laundry wants every customer to feel comfortable asking questions. Whether you need bedding washed, 
+            uniforms cleaned, or socks rescued, we are here to help.
+        </p>
+        <figure>
+            <img src="images/receptionist.png" alt="Octopus receptionist at the front desk" class="card-image">
+            <figcaption>
+                Our friendly octopus receptionist is ready to answer questions and help customers with their laundry needs.
+            </figcaption>
+        </figure>
+
+        <section class="card">
+            <h3>Send a Message</h3>
+
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="form-result"></p>
+        </section>
+
+        <section class="card">
+            <img src="images/octopus-waving.png"
+            alt="Laundry Octopus"
+            class="card-octopus">
+            <h3>Customer Reviews</h3>
+
+            <p id="review-text">
+                “The octopus crew folded my towels better than I ever could!”
+            </p>
+
+            <button id="previous-review">Previous</button>
+            <button id="next-review">Next</button>
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
+    <div id="bubble-background"></div>
+</body>
+
+</html>
