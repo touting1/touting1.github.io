@@ -309,6 +309,9 @@
             margin: 0;
         }
     }
+    /* ^the Accumulus error above will not go away. I tried 
+    everything and checked my code multiiple times. This error tells 
+    me nothing it is just a line, so I have no clue how to remove it or why it is there. */
 
     @media screen and (max-width: 600px) {
         .tracking-search {
