@@ -117,6 +117,7 @@ h2 {
     color: #005f73;
     font-size: 2rem;
     margin-top: 0;
+    font: Calibri, Arial, Helvetica, sans-serif;
 }
 
 h2::before,
